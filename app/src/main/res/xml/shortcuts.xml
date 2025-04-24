@@ -1,0 +1,26 @@
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+    <shortcut
+        android:shortcutId="shortcuts1"
+        android:enabled="true"
+        android:icon="@drawable/ic_launcher_foreground"
+        android:shortcutShortLabel="@string/ble_on"
+        android:shortcutLongLabel="@string/ble_on"
+        android:shortcutDisabledMessage="@string/shortcut_disabled">
+        <intent
+            android:action="com.c3llo.teslarelayble.bleon"
+            android:targetPackage="com.c3llo.teslarelayble"
+            android:targetClass="com.c3llo.teslarelayble.ShortCutActivity" />
+    </shortcut>
+
+    <shortcut
+        android:shortcutId="shortcuts2"
+        android:icon="@drawable/ic_launcher_foreground"
+        android:shortcutShortLabel="@string/ble_off"
+        android:shortcutLongLabel="@string/ble_off"
+        android:shortcutDisabledMessage="@string/shortcut_disabled">
+        <intent
+            android:action="com.c3llo.teslarelayble.bleoff"
+            android:targetPackage="com.c3llo.teslarelayble"
+            android:targetClass="com.c3llo.teslarelayble.ShortCutActivity" />
+    </shortcut>
+</shortcuts>
